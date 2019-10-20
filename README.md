@@ -3,7 +3,7 @@ CV2 Face Recognition
 
 Pasos:
 
-1. Crear una carpeta dentro de la carpeta orl_faces con su nombre. Por ejemplo, la carpeta PedroNavaja y correr el siguiente comando, tomará 100 imagenes y las guardara en la carpeta PedroNavaja
+1. Crear una carpeta llamada 'att_faces', dentro de esta crear la carpeta llamada 'orl_faces', luego dentro de esta crear una carpeta con su nombre. Por ejemplo, la carpeta PedroNavaja y correr el siguiente comando, tomará 100 imagenes y las guardara en la carpeta PedroNavaja
 
 ```
 python capture.py PedroNavaja
