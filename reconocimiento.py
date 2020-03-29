@@ -5,7 +5,7 @@ import os
 #OpenCV trabaja con arreglos de numpy
 import numpy
 # Parte 1: Creando el entrenamiento del modelo
-print('Formando...')
+print('Reconociendo...')
 
 #Directorio donde se encuentran las carpetas con las caras de entrenamiento
 dir_faces = 'att_faces/orl_faces'
@@ -70,15 +70,15 @@ while True:
         cara = '%s' % (names[prediction[0]])
 
         #Si la prediccion tiene una exactitud menor a 100 se toma como prediccion valida
-        if prediction[1]<100 :
+        if prediction[1]<150 :
           #Ponemos el nombre de la persona que se reconoció
           cv2.putText(frame,'%s - %.0f' % (cara,prediction[1]),(x-10, y-10), cv2.FONT_HERSHEY_PLAIN,1,(0, 255, 0))
 
 
         #Si la prediccion es mayor a 100 no es un reconomiento con la exactitud suficiente
-        elif prediction[1]>101 and prediction[1]<500:           
+        elif prediction[1]>151 and prediction[1]<500:           
             #Si la cara es desconocida, poner desconocido
-            cv2.putText(frame, 'Desconocido',(x-10, y-10), cv2.FONT_HERSHEY_PLAIN,1,(0, 255, 0))  
+            cv2.putText(frame, 'No lo conoce ni su mamá',(x-10, y-10), cv2.FONT_HERSHEY_PLAIN,1,(0, 255, 0))  
 
         #Mostramos la imagen
         cv2.imshow('OpenCV Reconocimiento facial', frame)
