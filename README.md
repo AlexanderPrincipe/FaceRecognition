@@ -31,7 +31,7 @@ cd FaceRecognition/
 
 ![Captura de pantalla de 2020-03-28 23-12-09](https://user-images.githubusercontent.com/31213239/77840170-d2b74980-7149-11ea-807d-e5c614808656.png)
 
-3. Luego, el programa tomara 100 fotos con el siguiente comando, estas 100 fotos le servira como input para poder reconocer rostros. (Ubicarse en la raiz del programa '/FaceRecognition')
+3. Luego, el programa tomara 100 fotos con el siguiente comando, estas 100 fotos le servira como input para poder reconocer rostros. (Ubicarse en la raiz del programa '/FaceRecognition') (Es necesario correrlo con la version de python 3.7)
 ```
 python capture.py AlexanderPrincipe
 ```
